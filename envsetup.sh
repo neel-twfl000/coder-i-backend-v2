@@ -12,7 +12,7 @@ echo "Env Setup complete"
 source env/bin/activate
 
 echo "Requeriments Install By Pip Start"
-pip install -r backend/requirements.txt
+pip install -r app/requirements.txt
 echo "Requeriments Install By Pip Success"
 
 if [ -d "logs" ] 
