@@ -15,6 +15,4 @@ sudo systemctl enable gunicorn
 sudo systemctl start gunicorn
 sudo systemctl status gunicorn
 source env/bin/activate
-# cd /var/lib/jenkins/workspace/django-jenkins-nginx/backend/
-# echo $PWD
 echo "###############Gunicorn Setup Done ############"
