@@ -21,6 +21,7 @@ THIRD_PARTY_APPS = [
     'corsheaders',
     'ckeditor',
     "django_filters",
+    'rest_framework_swagger',
 ]
 
 PROJECT_APPS += THIRD_PARTY_APPS
@@ -36,7 +37,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -110,6 +110,7 @@ REST_FRAMEWORK = {
     ],
     
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
 }
 
 CORS_ORIGIN_ALLOW_ALL = True

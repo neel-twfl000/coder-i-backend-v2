@@ -8,12 +8,8 @@ else
 fi
 
 echo $PWD
-echo "Env Setup complete"
 source env/bin/activate
-
-echo "Requeriments Install By Pip Start"
 pip install -r app/requirements.txt
-echo "Requeriments Install By Pip Success"
 
 if [ -d "logs" ] 
 then
@@ -23,4 +19,3 @@ else
     touch logs/error.log logs/access.log
 fi
 sudo chmod -R 777 logs
-
