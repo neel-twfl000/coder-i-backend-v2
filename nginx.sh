@@ -1,5 +1,5 @@
 # sudo cp -rf testnginx /etc/nginx/sites-available
-chmod 710 /var/lib/jenkins/workspace/coder-i-backend
+# chmod 710 /var/lib/jenkins/workspace/coder-i-backend
 # sudo ln -s /etc/nginx/sites-available/testnginx /etc/nginx/sites-enabled
 sudo nginx -t
 sudo systemctl restart nginx
