@@ -2,6 +2,7 @@
 # chmod 710 /var/lib/jenkins/workspace/coder-i-backend
 # sudo ln -s /etc/nginx/sites-available/testnginx /etc/nginx/sites-enabled
 sudo nginx -t
+sudo certbot renew --dry-run
 sudo systemctl restart nginx
 sudo systemctl restart gunicorn
 sudo systemctl status nginx
